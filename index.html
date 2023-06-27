@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+     <!--
+        --ask the user to enter the type
+        --if he choose a type, generate soemthing in it
+        --make input to put the answer
+        --oncick start , it starts the game
+        --focus on
+        --type
+        --submit
+        --if it is not correct, shake and delete the answer and delete heart and tell him
+        --to try again
+        --if all wrong finish and say goodluck next time
+        --if he wins congrats
+    
+     -->
+    <div class="container">
+        <h1 id="heading" align="center">Guess The Word Game!</h1>
+        <div class="hearts">
+            <div class="heart"><div id="h1"><svg class="heart1" viewBox="0 0 32 29.6">
+                <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                  c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+              </svg> 
+              </div>
+              <div id="h2">
+            <svg class="heart2" viewBox="0 0 32 29.6">
+  <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+	c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+</svg> </div>
+<div id="h3">
+            <svg class="heart3" viewBox="0 0 32 29.6">
+  <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+	c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+</svg> 
+</div>
+</div>
+        </div>
+        <div class="ask">
+            <label for="choosing">Select one type of the following</label><br>
+            <select id="choosing">
+                <option>Animals</option>
+                <option>Cars</option>
+                <option>pLanguages</option>
+            </select>
+        
+        <button id="start" onclick="start()">Start</button>
+        </div>
+        <div class="enter">
+            <label for="word">Enter the word : </label>
+            <input type="text" id="word" placeholder="Enter Here">
+        </div>
+        <div class="check">
+            <button id="checking" onclick="check()">Check</button>
+            <h2 id="answer"></h2>
+        </div>
+    <!--last div--></div>
+    <script src="script.js"></script>
+</body>
+</html>
